@@ -9,6 +9,7 @@ const Page = ({ title, children }) => (
       <link rel="manifest" href="/static/manifest.json" />
       <link rel="icon" sizes="192x192" href="/static/apollo-icon.png" />
       <link rel="apple-touch-icon" href="/static/apollo-launcher-icon.png" />
+      <link rel="stylesheet" href="/static/mapbox-gl.css" />
     </Head>
     {children}
     <style jsx global>{`
@@ -17,9 +18,13 @@ const Page = ({ title, children }) => (
           sans-serif;
         color: white;
         background-color: #22a699;
+        min-height: 100vh;
       }
       body {
         margin: 2em;
+      }
+      .mapboxgl-canvas-container {
+        height: 800px;
       }
     `}</style>
   </div>
