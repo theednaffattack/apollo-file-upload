@@ -10,6 +10,7 @@ const Page = ({ title, children }) => (
       <link rel="icon" sizes="192x192" href="/static/apollo-icon.png" />
       <link rel="apple-touch-icon" href="/static/apollo-launcher-icon.png" />
       <link rel="stylesheet" href="/static/mapbox-gl.css" />
+      <link rel="stylesheet" href="/static/react-table.css" />
     </Head>
     {children}
     <style jsx global>{`
