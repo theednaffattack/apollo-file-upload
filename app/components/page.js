@@ -18,7 +18,7 @@ const Page = ({ title, children }) => (
         font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial,
           sans-serif;
         color: white;
-        background-color: #22a699;
+        background-color: #c1c1c1;
         min-height: 100vh;
       }
       body {

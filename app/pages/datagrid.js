@@ -9,7 +9,7 @@ import DataGridTwo from '../components/datagridtwo'
 const DataGridPage = () => (
   <Page title="Datagrid Example">
     <h2>Datagrid Test</h2>
-    <div style={{ width: '900px' }}>
+    <div className="data-table" style={{ width: '900px' }}>
       <DataGridTwo />
     </div>
   </Page>

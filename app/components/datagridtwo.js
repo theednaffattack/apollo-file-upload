@@ -4,6 +4,8 @@ import { makeData, Logo, Tips } from '../helpers/Utils'
 // Import React Table
 import ReactTable from 'react-table'
 
+// style={{ backgroundColor: '#fafafa' }}
+
 class DataGridTwo extends React.Component {
   constructor() {
     super()
@@ -15,7 +17,6 @@ class DataGridTwo extends React.Component {
   renderEditable(cellInfo) {
     return (
       <div
-        style={{ backgroundColor: '#fafafa' }}
         contentEditable
         suppressContentEditableWarning
         onBlur={e => {
@@ -33,6 +34,8 @@ class DataGridTwo extends React.Component {
     const { data } = this.state
     return (
       <div>
+        <Tips />
+        <br />
         <ReactTable
           data={data}
           columns={[
@@ -61,9 +64,6 @@ class DataGridTwo extends React.Component {
           defaultPageSize={10}
           className="-striped -highlight"
         />
-        <br />
-        <Tips />
-        <Logo />
       </div>
     )
   }
